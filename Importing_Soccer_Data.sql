@@ -15,7 +15,7 @@ CREATE TABLE kaggle_data (
     matches INT,
     goals INT,
     points INT,
-    player_value VARCHAR(50)  -- 'values' is a reserved keyword, renamed to player_value
+    player_value VARCHAR(50) 
 );
 
 LOAD DATA LOCAL INFILE 'C:/Users/matty/Downloads/Untitled spreadsheet - transfermarkt_players.csv'
@@ -25,4 +25,5 @@ FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS; 
+
 
